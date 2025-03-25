@@ -1,21 +1,71 @@
-# Restaurant_EDA
+**# EDA on Sales Data**
 
-The dataset titled "Sales_Data" appears to contain transactional sales information. It includes the following key columns:
+## **Project Overview**
+This project involves performing **Exploratory Data Analysis (EDA)** on sales data to derive meaningful business insights. The analysis includes data cleaning, visualization, and statistical aggregation to understand product performance, revenue trends, and sales distribution.
 
-1.  Order ID: Unique identifier for each order.
+---
 
-2.  Date: The date when the transaction took place.
+## **Dataset Description**
+The dataset contains the following key columns:
+- **Date:** Date of the transaction.
+- **Product:** Category of the product sold.
+- **Quantity:** Number of units sold.
+- **Price:** Price per unit of the product.
+- **Revenue:** Total revenue generated.
+- **City:** Location where the transaction occurred.
+- **Manager:** Manager overseeing the sales.
 
-3.  Product: The category or type of product sold (e.g., Fries, Beverages, Burgers).
+---
 
-4.  Price: The price of the product sold.
+## **Key Insights**
+- **Burgers** generate the highest revenue, indicating high profitability.
+- **Beverages** and **Fries** lead in terms of quantity sold, suggesting high consumer demand.
+- **Lebanon** is the city with the highest total revenue.
+- **Joao Silva** is the top-performing manager in terms of revenue.
+- Revenue trends show a significant spike in **mid-November**, followed by steady growth in **December**.
 
-5.  Quantity: The quantity of items sold, represented as a numerical value.
+---
 
-6.  Purchase Type: Specifies whether the purchase was made online or in-store.
+## **Data Cleaning & Preprocessing**
+- Removed extra spaces and standardized text fields.
+- Handled missing values and ensured data type consistency.
+- Created new columns for total revenue and grouped data for aggregation.
 
-7.  Payment Method: Indicates the mode of payment, such as Gift Card or Credit Card.
+---
 
-8.  Manager: The name of the manager associated with the transaction.
+## **Visualizations**
+- **Bar Plots:** For comparing revenue and quantity across products, cities, and managers.
+- **Line Plot:** To observe date-wise revenue trends.
+- **Grouped Bar Plot:** To showcase the average quantity and revenue by product.
 
-9.  City: The city where the transaction occurred.
+---
+
+## **Tools & Libraries Used**
+- **Python** for data analysis.
+- **Pandas** for data manipulation.
+- **Matplotlib** & **Seaborn** for data visualization.
+
+---
+
+## **How to Run the Project**
+1. Clone the repository.
+2. Install required dependencies from **requirements.txt**.
+3. Run the Jupyter Notebook.
+
+```bash
+pip install -r requirements.txt
+python analysis_script.py
+```
+
+---
+
+## **Conclusion**
+This EDA provided valuable insights into sales performance, identifying top-performing products, cities, and managers. These findings can guide decision-making for marketing strategies and inventory management.
+
+---
+
+## **Contributions**
+Contributions are welcome! Feel free to open a pull request or report issues.
+
+---
+
